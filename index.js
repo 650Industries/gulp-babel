@@ -27,7 +27,9 @@ module.exports = function (opts) {
 				sourceMap: !!file.sourceMap
 			});
 
+			gutil.log("babel:", file.relative, "transforming...");
 			var res = babel.transform(file.contents.toString(), fileOpts);
+			gutil.log("babel:", file.relative, "done.");
 
 			if (file.sourceMap && res.map) {
 				applySourceMap(file, res.map);
@@ -37,7 +39,7 @@ module.exports = function (opts) {
 			file.path = replaceExt(file.path, '.js');
 			this.push(file);
 		} catch (err) {
-			this.emit('error', new gutil.PluginError('gulp-babel', err, {fileName: file.path, showProperties: false}));
+			this.emit('error', new gutil.PluginError('gulp-babel', err, {fileName: file.path, showProperties: true}));
 		}
 
 		cb();

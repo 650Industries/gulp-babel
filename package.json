@@ -1,5 +1,5 @@
 {
-  "name": "gulp-babel",
+  "name": "@exponent/gulp-babel",
   "version": "5.1.0",
   "description": "Turn ES6 code into vanilla ES5 with no runtime required",
   "license": "MIT",
