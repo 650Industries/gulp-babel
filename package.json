@@ -1,6 +1,6 @@
 {
   "name": "@exponent/gulp-babel",
-  "version": "6.0.0",
+  "version": "6.0.1",
   "description": "Turn ES6 code into vanilla ES5 with no runtime required",
   "license": "MIT",
   "repository": "babel/gulp-babel",
@@ -16,7 +16,7 @@
     "test": "mocha"
   },
   "files": [
-    "index.js"
+    "index.js", "babel.js", "task.js"
   ],
   "keywords": [
     "gulpplugin",
