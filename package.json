@@ -1,6 +1,6 @@
 {
   "name": "@exponent/gulp-babel",
-  "version": "6.1.0",
+  "version": "6.1.1",
   "description": "Turn ES6 code into vanilla ES5 with no runtime required",
   "license": "MIT",
   "repository": "babel/gulp-babel",
@@ -59,7 +59,7 @@
     "gulp-sourcemaps": "^1.1.1",
     "babel-core": "^5.0.0",
     "gulp": "^3.8.11",
-    "gulp-changed": "^1.2.1",
+    "@exponent/gulp-changed": "^1.2.1",
     "gulp-plumber": "^1.0.0",
     "gulp-util": "^3.0.4",
     "gulp-watch": "^4.2.4"
